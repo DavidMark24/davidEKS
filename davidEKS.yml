@@ -4,7 +4,7 @@
         Properties:
             Name: davidCluster32
             Version: "1.25"
-            RoleArn: "arn:aws:iam::388328004932:role/backend-test-CFNExecutionRole"
+            RoleArn: "arn:aws:iam::388328004932:role/AWSEKSRole"
             ResourcesVpcConfig:
                 SecurityGroupIds:
                 - sg-0d8315f2e7a43714e
