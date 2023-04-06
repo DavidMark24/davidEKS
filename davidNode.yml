@@ -3,7 +3,7 @@ Resources:
         Type: AWS::EKS::Nodegroup
         Properties:
             AmiType: AL2_x86_64
-            ClusterName: davidCluster24
+            ClusterName: davidCluster
             NodegroupName: dave
             NodeRole: "arn:aws:iam::388328004932:role/eks-node-group"
             Subnets: 
