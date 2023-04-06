@@ -1,8 +1,8 @@
- Resources:
+  Resources:
     EKSCluster:
         Type: AWS::EKS::Cluster
         Properties:
-            Name: davidCluster32
+            Name: davidCluster24
             Version: "1.25"
             RoleArn: "arn:aws:iam::388328004932:role/AWSEKSRole"
             ResourcesVpcConfig:
@@ -18,10 +18,13 @@
         Type: AWS::EKS::Nodegroup
         Properties:
             AmiType: AL2_x86_64
-            ClusterName: davidCluster32
+            ClusterName: davidCluster24
             NodegroupName: dave
             NodeRole: "arn:aws:iam::388328004932:role/eks-node-group"
             Subnets: 
                 - subnet-0a31af885cfd8721d
                 - subnet-01b356a04735bdf93
+
+
+           
     
